@@ -1,0 +1,40 @@
+.todo-list {
+  display: grid;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  box-shadow: 0 0 10px #3333332c;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-list li > * {
+  padding: 1rem;
+}
+
+.todo-list label {
+  flex-grow: 1;
+}
+
+.todo-list button {
+  border: none;
+  background-color: transparent;
+}
+
+.todo-list label.done {
+  text-decoration: line-through;
+}
+
+.todo-list .remove {
+  color: red;
+  cursor: pointer;
+}
+
+.todo-list .remove:not(.done) {
+  display: none;
+}
